@@ -39,10 +39,9 @@
             this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.herramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.DGdisplay = new System.Windows.Forms.DataGridView();
+            this.BTNmostrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DGdisplay)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -128,17 +127,15 @@
             this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
             // 
-            // DGdisplay
+            // BTNmostrar
             // 
-            this.DGdisplay.AllowUserToAddRows = false;
-            this.DGdisplay.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.DGdisplay.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGdisplay.Location = new System.Drawing.Point(12, 123);
-            this.DGdisplay.Name = "DGdisplay";
-            this.DGdisplay.Size = new System.Drawing.Size(578, 366);
-            this.DGdisplay.TabIndex = 6;
+            this.BTNmostrar.Location = new System.Drawing.Point(436, 94);
+            this.BTNmostrar.Name = "BTNmostrar";
+            this.BTNmostrar.Size = new System.Drawing.Size(75, 23);
+            this.BTNmostrar.TabIndex = 7;
+            this.BTNmostrar.Text = "Mostrar";
+            this.BTNmostrar.UseVisualStyleBackColor = true;
+            this.BTNmostrar.Click += new System.EventHandler(this.BTNmostrar_Click);
             // 
             // Form1
             // 
@@ -146,7 +143,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(602, 501);
-            this.Controls.Add(this.DGdisplay);
+            this.Controls.Add(this.BTNmostrar);
             this.Controls.Add(this.BTNexaminar);
             this.Controls.Add(this.TXTroute);
             this.Controls.Add(this.label2);
@@ -158,11 +155,9 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Sticker Printer";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DGdisplay)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -180,7 +175,7 @@
         private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem herramientasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
-        private System.Windows.Forms.DataGridView DGdisplay;
+        private System.Windows.Forms.Button BTNmostrar;
 
     }
 }

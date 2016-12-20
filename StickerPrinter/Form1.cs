@@ -17,10 +17,7 @@ namespace StickerPrinter
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
+        DataTable table;
 
         private void BTNexaminar_Click(object sender, EventArgs e)
         {
@@ -35,16 +32,20 @@ namespace StickerPrinter
                 try
                 {
                     CsvImport import = new CsvImport();
-                    DataTable table = import.NewDataTable(op.FileName, ";", true);
-                    DGdisplay.DataSource = table;
+                    table = import.NewDataTable(op.FileName, ";", true);
                     TXTroute.Text = op.FileName;
                 }
                 catch(Exception ex)
                 {
                     MessageBox.Show("Error: no se pudo leer el archivo " + ex.Message);
-                    
                 }
             }
+        }
+
+        private void BTNmostrar_Click(object sender, EventArgs e)
+        {
+            Visualizer v = new Visualizer(table);
+            v.Show();
         }
     }
 }
