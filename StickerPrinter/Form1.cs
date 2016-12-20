@@ -36,10 +36,8 @@ namespace StickerPrinter
                 {
                     CsvImport import = new CsvImport();
                     DataTable table = import.NewDataTable(op.FileName, ";", true);
-                    foreach (DataRow row in table.Rows)
-                    {
-                        DGdisplay.Rows.Add(row);
-                    }
+                    DGdisplay.DataSource = table;
+                    TXTroute.Text = op.FileName;
                 }
                 catch(Exception ex)
                 {
