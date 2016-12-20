@@ -1,0 +1,17 @@
+C:\Users\daniel.blanco\Dropbox\DESARROLLOS.NET\DESARROLLOS LASERFICHE\DESARROLLOS PARA CLIENTES\StickerPrinter\StickerPrinter\bin\Debug\StickerPrinter.exe
+C:\Users\daniel.blanco\Dropbox\DESARROLLOS.NET\DESARROLLOS LASERFICHE\DESARROLLOS PARA CLIENTES\StickerPrinter\StickerPrinter\bin\Debug\StickerPrinter.pdb
+C:\Users\daniel.blanco\Dropbox\DESARROLLOS.NET\DESARROLLOS LASERFICHE\DESARROLLOS PARA CLIENTES\StickerPrinter\StickerPrinter\obj\Debug\StickerPrinter.csprojResolveAssemblyReference.cache
+C:\Users\daniel.blanco\Dropbox\DESARROLLOS.NET\DESARROLLOS LASERFICHE\DESARROLLOS PARA CLIENTES\StickerPrinter\StickerPrinter\obj\Debug\StickerPrinter.Form1.resources
+C:\Users\daniel.blanco\Dropbox\DESARROLLOS.NET\DESARROLLOS LASERFICHE\DESARROLLOS PARA CLIENTES\StickerPrinter\StickerPrinter\obj\Debug\StickerPrinter.Properties.Resources.resources
+C:\Users\daniel.blanco\Dropbox\DESARROLLOS.NET\DESARROLLOS LASERFICHE\DESARROLLOS PARA CLIENTES\StickerPrinter\StickerPrinter\obj\Debug\StickerPrinter.csproj.GenerateResource.Cache
+C:\Users\daniel.blanco\Dropbox\DESARROLLOS.NET\DESARROLLOS LASERFICHE\DESARROLLOS PARA CLIENTES\StickerPrinter\StickerPrinter\obj\Debug\StickerPrinter.exe
+C:\Users\daniel.blanco\Dropbox\DESARROLLOS.NET\DESARROLLOS LASERFICHE\DESARROLLOS PARA CLIENTES\StickerPrinter\StickerPrinter\obj\Debug\StickerPrinter.pdb
+C:\Users\DTHPSE15\Documents\Visual Studio 2013\Projects\StickerPrinter\StickerPrinter\obj\Debug\StickerPrinter.exe
+C:\Users\DTHPSE15\Documents\Visual Studio 2013\Projects\StickerPrinter\StickerPrinter\obj\Debug\StickerPrinter.pdb
+C:\Users\DTHPSE15\Documents\Visual Studio 2013\Projects\StickerPrinter\StickerPrinter\obj\Debug\StickerPrinter.csprojResolveAssemblyReference.cache
+C:\Users\DTHPSE15\Documents\Visual Studio 2013\Projects\StickerPrinter\StickerPrinter\obj\Debug\StickerPrinter.Form1.resources
+C:\Users\DTHPSE15\Documents\Visual Studio 2013\Projects\StickerPrinter\StickerPrinter\obj\Debug\StickerPrinter.Properties.Resources.resources
+C:\Users\DTHPSE15\Documents\Visual Studio 2013\Projects\StickerPrinter\StickerPrinter\obj\Debug\StickerPrinter.csproj.GenerateResource.Cache
+C:\Users\DTHPSE15\Documents\Visual Studio 2013\Projects\StickerPrinter\StickerPrinter\bin\Debug\StickerPrinter.exe
+C:\Users\DTHPSE15\Documents\Visual Studio 2013\Projects\StickerPrinter\StickerPrinter\bin\Debug\StickerPrinter.pdb
+C:\Users\DTHPSE15\Documents\Visual Studio 2013\Projects\StickerPrinter\StickerPrinter\bin\Debug\Microsoft.VisualBasic.dll
