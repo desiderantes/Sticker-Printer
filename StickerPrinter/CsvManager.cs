@@ -7,7 +7,7 @@ using System.Data;
 
 namespace StickerPrinter
 {
-    public class CsvImport
+    public class CsvManager
     {
         public DataTable NewDataTable(string fileName, string delimiters, bool firstRowContainsFieldNames = true)
         {

@@ -15,14 +15,48 @@ namespace StickerPrinter
         public Form1()
         {
             InitializeComponent();
+
+            groupBox1.Enabled = false;
         }
 
         DataTable table;
 
+        private void fillComboBoxes()
+        {
+            CMBtitulo.Items.Add("Texto personalizado");
+            CMBcodigobarras.Items.Add("Texto personalizado");
+            CMBdetalles1.Items.Add("Texto personalizado");
+            CMBdetalles2.Items.Add("Texto personalizado");
+            CMBdetalles3.Items.Add("Texto personalizado");
+            CMBdetalles4.Items.Add("Texto personalizado");
+        }
+
+        private void fillComboBoxes(List<string> wordlist)
+        {
+            CMBtitulo.Items.AddRange(wordlist.ToArray());
+            CMBcodigobarras.Items.AddRange(wordlist.ToArray());
+            CMBdetalles1.Items.AddRange(wordlist.ToArray());
+            CMBdetalles2.Items.AddRange(wordlist.ToArray());
+            CMBdetalles3.Items.AddRange(wordlist.ToArray());
+            CMBdetalles4.Items.AddRange(wordlist.ToArray());
+        }
+
+        private void clearControls() 
+        {
+            CMBtitulo.Items.Clear();
+            CMBcodigobarras.Items.Clear();
+            CMBdetalles1.Items.Clear();
+            CMBdetalles2.Items.Clear();
+            CMBdetalles3.Items.Clear();
+            CMBdetalles4.Items.Clear();
+        }
+
         private void BTNexaminar_Click(object sender, EventArgs e)
         {
-            OpenFileDialog op = new OpenFileDialog();
+            clearControls();
+            fillComboBoxes();
 
+            OpenFileDialog op = new OpenFileDialog();
             op.Filter = "Archivo separado por caracter (.csv)|*.csv";
             op.FilterIndex = 1;
             op.Multiselect = false;
@@ -31,13 +65,20 @@ namespace StickerPrinter
             {
                 try
                 {
-                    CsvImport import = new CsvImport();
-                    table = import.NewDataTable(op.FileName, ";", true);
+                    CsvManager manager = new CsvManager();
+                    table = manager.NewDataTable(op.FileName, ";", true);
                     TXTroute.Text = op.FileName;
+                    groupBox1.Enabled = true;
+                    List<string> titles = new List<string>();
+                    foreach (DataColumn col in table.Columns)
+                    {
+                        titles.Add(col.ColumnName.ToString());
+                    }
+                    fillComboBoxes(titles);
                 }
                 catch(Exception ex)
                 {
-                    MessageBox.Show("Error: no se pudo leer el archivo " + ex.Message);
+                    MessageBox.Show("Error: no se pudo leer el archivo. " + ex.Message);
                 }
             }
         }

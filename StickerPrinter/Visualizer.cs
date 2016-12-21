@@ -15,7 +15,12 @@ namespace StickerPrinter
         {
             InitializeComponent();
 
+            //añade datos al datagridview
             DGcsv.DataSource = t;
+
+            //ajusta el tamaño del datagridview a su contenido
+            DGcsv.AutoResizeColumns();
+            DGcsv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
         }
     }
 }
