@@ -40,7 +40,7 @@
             this.herramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.BTNmostrar = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.GBcodigobarras = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
             this.CMBdetalles4 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -55,8 +55,24 @@
             this.CMBtitulo = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.TXTpersonalizado = new System.Windows.Forms.TextBox();
+            this.GBpropiedadesimp = new System.Windows.Forms.GroupBox();
+            this.NUDrangoF = new System.Windows.Forms.NumericUpDown();
+            this.label10 = new System.Windows.Forms.Label();
+            this.NUDrangoI = new System.Windows.Forms.NumericUpDown();
+            this.NUDlinea = new System.Windows.Forms.NumericUpDown();
+            this.RBrango = new System.Windows.Forms.RadioButton();
+            this.RBlinea = new System.Windows.Forms.RadioButton();
+            this.RBtodo = new System.Windows.Forms.RadioButton();
+            this.BTNimprimir = new System.Windows.Forms.Button();
+            this.CMBimpresora = new System.Windows.Forms.ComboBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            this.GBcodigobarras.SuspendLayout();
+            this.GBpropiedadesimp.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NUDrangoF)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUDrangoI)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUDlinea)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -115,7 +131,7 @@
             this.ayudaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(602, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(575, 24);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -153,26 +169,26 @@
             this.BTNmostrar.UseVisualStyleBackColor = true;
             this.BTNmostrar.Click += new System.EventHandler(this.BTNmostrar_Click);
             // 
-            // groupBox1
+            // GBcodigobarras
             // 
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.CMBdetalles4);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.CMBdetalles3);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.CMBdetalles2);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.CMBdetalles1);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.CMBcodigobarras);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.CMBtitulo);
-            this.groupBox1.Location = new System.Drawing.Point(12, 124);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(337, 199);
-            this.groupBox1.TabIndex = 9;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Código de barras";
+            this.GBcodigobarras.Controls.Add(this.label8);
+            this.GBcodigobarras.Controls.Add(this.CMBdetalles4);
+            this.GBcodigobarras.Controls.Add(this.label7);
+            this.GBcodigobarras.Controls.Add(this.CMBdetalles3);
+            this.GBcodigobarras.Controls.Add(this.label6);
+            this.GBcodigobarras.Controls.Add(this.CMBdetalles2);
+            this.GBcodigobarras.Controls.Add(this.label5);
+            this.GBcodigobarras.Controls.Add(this.CMBdetalles1);
+            this.GBcodigobarras.Controls.Add(this.label4);
+            this.GBcodigobarras.Controls.Add(this.CMBcodigobarras);
+            this.GBcodigobarras.Controls.Add(this.label3);
+            this.GBcodigobarras.Controls.Add(this.CMBtitulo);
+            this.GBcodigobarras.Location = new System.Drawing.Point(12, 124);
+            this.GBcodigobarras.Name = "GBcodigobarras";
+            this.GBcodigobarras.Size = new System.Drawing.Size(337, 199);
+            this.GBcodigobarras.TabIndex = 9;
+            this.GBcodigobarras.TabStop = false;
+            this.GBcodigobarras.Text = "Código de barras";
             // 
             // label8
             // 
@@ -185,6 +201,7 @@
             // 
             // CMBdetalles4
             // 
+            this.CMBdetalles4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CMBdetalles4.FormattingEnabled = true;
             this.CMBdetalles4.Location = new System.Drawing.Point(61, 164);
             this.CMBdetalles4.Name = "CMBdetalles4";
@@ -202,6 +219,7 @@
             // 
             // CMBdetalles3
             // 
+            this.CMBdetalles3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CMBdetalles3.FormattingEnabled = true;
             this.CMBdetalles3.Location = new System.Drawing.Point(61, 135);
             this.CMBdetalles3.Name = "CMBdetalles3";
@@ -219,6 +237,7 @@
             // 
             // CMBdetalles2
             // 
+            this.CMBdetalles2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CMBdetalles2.FormattingEnabled = true;
             this.CMBdetalles2.Location = new System.Drawing.Point(61, 106);
             this.CMBdetalles2.Name = "CMBdetalles2";
@@ -236,6 +255,7 @@
             // 
             // CMBdetalles1
             // 
+            this.CMBdetalles1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CMBdetalles1.FormattingEnabled = true;
             this.CMBdetalles1.Location = new System.Drawing.Point(61, 77);
             this.CMBdetalles1.Name = "CMBdetalles1";
@@ -253,6 +273,7 @@
             // 
             // CMBcodigobarras
             // 
+            this.CMBcodigobarras.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CMBcodigobarras.FormattingEnabled = true;
             this.CMBcodigobarras.Location = new System.Drawing.Point(110, 48);
             this.CMBcodigobarras.Name = "CMBcodigobarras";
@@ -270,6 +291,7 @@
             // 
             // CMBtitulo
             // 
+            this.CMBtitulo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CMBtitulo.FormattingEnabled = true;
             this.CMBtitulo.Location = new System.Drawing.Point(61, 19);
             this.CMBtitulo.Name = "CMBtitulo";
@@ -292,12 +314,169 @@
             this.TXTpersonalizado.Size = new System.Drawing.Size(227, 23);
             this.TXTpersonalizado.TabIndex = 21;
             // 
+            // GBpropiedadesimp
+            // 
+            this.GBpropiedadesimp.Controls.Add(this.NUDrangoF);
+            this.GBpropiedadesimp.Controls.Add(this.label10);
+            this.GBpropiedadesimp.Controls.Add(this.NUDrangoI);
+            this.GBpropiedadesimp.Controls.Add(this.NUDlinea);
+            this.GBpropiedadesimp.Controls.Add(this.RBrango);
+            this.GBpropiedadesimp.Controls.Add(this.RBlinea);
+            this.GBpropiedadesimp.Controls.Add(this.RBtodo);
+            this.GBpropiedadesimp.Location = new System.Drawing.Point(355, 183);
+            this.GBpropiedadesimp.Name = "GBpropiedadesimp";
+            this.GBpropiedadesimp.Size = new System.Drawing.Size(202, 111);
+            this.GBpropiedadesimp.TabIndex = 22;
+            this.GBpropiedadesimp.TabStop = false;
+            this.GBpropiedadesimp.Text = "Propiedades de impersión";
+            // 
+            // NUDrangoF
+            // 
+            this.NUDrangoF.Location = new System.Drawing.Point(159, 74);
+            this.NUDrangoF.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.NUDrangoF.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.NUDrangoF.Name = "NUDrangoF";
+            this.NUDrangoF.Size = new System.Drawing.Size(33, 23);
+            this.NUDrangoF.TabIndex = 6;
+            this.NUDrangoF.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.NUDrangoF.ValueChanged += new System.EventHandler(this.NUDrangoF_ValueChanged);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(141, 76);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(12, 15);
+            this.label10.TabIndex = 5;
+            this.label10.Text = "y";
+            // 
+            // NUDrangoI
+            // 
+            this.NUDrangoI.Location = new System.Drawing.Point(102, 74);
+            this.NUDrangoI.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.NUDrangoI.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.NUDrangoI.Name = "NUDrangoI";
+            this.NUDrangoI.Size = new System.Drawing.Size(33, 23);
+            this.NUDrangoI.TabIndex = 4;
+            this.NUDrangoI.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.NUDrangoI.ValueChanged += new System.EventHandler(this.NUDrangoI_ValueChanged);
+            // 
+            // NUDlinea
+            // 
+            this.NUDlinea.Location = new System.Drawing.Point(68, 45);
+            this.NUDlinea.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.NUDlinea.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.NUDlinea.Name = "NUDlinea";
+            this.NUDlinea.Size = new System.Drawing.Size(33, 23);
+            this.NUDlinea.TabIndex = 3;
+            this.NUDlinea.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // RBrango
+            // 
+            this.RBrango.AutoSize = true;
+            this.RBrango.Location = new System.Drawing.Point(6, 74);
+            this.RBrango.Name = "RBrango";
+            this.RBrango.Size = new System.Drawing.Size(90, 19);
+            this.RBrango.TabIndex = 2;
+            this.RBrango.TabStop = true;
+            this.RBrango.Text = "Rango: entre";
+            this.RBrango.UseVisualStyleBackColor = true;
+            // 
+            // RBlinea
+            // 
+            this.RBlinea.AutoSize = true;
+            this.RBlinea.Location = new System.Drawing.Point(6, 49);
+            this.RBlinea.Name = "RBlinea";
+            this.RBlinea.Size = new System.Drawing.Size(56, 19);
+            this.RBlinea.TabIndex = 1;
+            this.RBlinea.TabStop = true;
+            this.RBlinea.Text = "Linea: ";
+            this.RBlinea.UseVisualStyleBackColor = true;
+            // 
+            // RBtodo
+            // 
+            this.RBtodo.AutoSize = true;
+            this.RBtodo.Location = new System.Drawing.Point(6, 20);
+            this.RBtodo.Name = "RBtodo";
+            this.RBtodo.Size = new System.Drawing.Size(104, 19);
+            this.RBtodo.TabIndex = 0;
+            this.RBtodo.TabStop = true;
+            this.RBtodo.Text = "Todo el reporte";
+            this.RBtodo.UseVisualStyleBackColor = true;
+            // 
+            // BTNimprimir
+            // 
+            this.BTNimprimir.Location = new System.Drawing.Point(423, 300);
+            this.BTNimprimir.Name = "BTNimprimir";
+            this.BTNimprimir.Size = new System.Drawing.Size(75, 23);
+            this.BTNimprimir.TabIndex = 23;
+            this.BTNimprimir.Text = "Imprimir";
+            this.BTNimprimir.UseVisualStyleBackColor = true;
+            this.BTNimprimir.Click += new System.EventHandler(this.BTNimprimir_Click);
+            // 
+            // CMBimpresora
+            // 
+            this.CMBimpresora.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CMBimpresora.FormattingEnabled = true;
+            this.CMBimpresora.Location = new System.Drawing.Point(14, 19);
+            this.CMBimpresora.Name = "CMBimpresora";
+            this.CMBimpresora.Size = new System.Drawing.Size(178, 23);
+            this.CMBimpresora.TabIndex = 24;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.CMBimpresora);
+            this.groupBox1.Location = new System.Drawing.Point(355, 124);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(202, 53);
+            this.groupBox1.TabIndex = 25;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Seleccionar impresora";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(602, 501);
+            this.ClientSize = new System.Drawing.Size(575, 377);
+            this.Controls.Add(this.BTNimprimir);
+            this.Controls.Add(this.GBpropiedadesimp);
             this.Controls.Add(this.TXTpersonalizado);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.BTNmostrar);
@@ -307,6 +486,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.GBcodigobarras);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -316,8 +496,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.GBcodigobarras.ResumeLayout(false);
+            this.GBcodigobarras.PerformLayout();
+            this.GBpropiedadesimp.ResumeLayout(false);
+            this.GBpropiedadesimp.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NUDrangoF)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUDrangoI)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUDlinea)).EndInit();
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -336,7 +522,7 @@
         private System.Windows.Forms.ToolStripMenuItem herramientasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
         private System.Windows.Forms.Button BTNmostrar;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox GBcodigobarras;
         private System.Windows.Forms.ComboBox CMBtitulo;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox CMBdetalles4;
@@ -351,6 +537,17 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox TXTpersonalizado;
+        private System.Windows.Forms.GroupBox GBpropiedadesimp;
+        private System.Windows.Forms.NumericUpDown NUDrangoI;
+        private System.Windows.Forms.NumericUpDown NUDlinea;
+        private System.Windows.Forms.RadioButton RBrango;
+        private System.Windows.Forms.RadioButton RBlinea;
+        private System.Windows.Forms.RadioButton RBtodo;
+        private System.Windows.Forms.NumericUpDown NUDrangoF;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button BTNimprimir;
+        private System.Windows.Forms.ComboBox CMBimpresora;
+        private System.Windows.Forms.GroupBox groupBox1;
 
     }
 }
