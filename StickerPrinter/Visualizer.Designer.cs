@@ -50,8 +50,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(602, 501);
             this.Controls.Add(this.DGcsv);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Visualizer";
-            this.Text = "Visualizer";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Visor de documentos";
             ((System.ComponentModel.ISupportInitialize)(this.DGcsv)).EndInit();
             this.ResumeLayout(false);
 
