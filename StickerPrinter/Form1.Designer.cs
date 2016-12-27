@@ -71,6 +71,13 @@
             this.RBrango = new System.Windows.Forms.RadioButton();
             this.RBlinea = new System.Windows.Forms.RadioButton();
             this.RBtodo = new System.Windows.Forms.RadioButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.GBcodigobarras.SuspendLayout();
@@ -78,6 +85,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.NUDrangoF)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUDrangoI)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUDlinea)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -404,7 +413,7 @@
             // 
             // BTNimprimir
             // 
-            this.BTNimprimir.Location = new System.Drawing.Point(543, 241);
+            this.BTNimprimir.Location = new System.Drawing.Point(539, 283);
             this.BTNimprimir.Name = "BTNimprimir";
             this.BTNimprimir.Size = new System.Drawing.Size(166, 23);
             this.BTNimprimir.TabIndex = 23;
@@ -421,7 +430,7 @@
             this.GBpropiedadesimp.Controls.Add(this.RBrango);
             this.GBpropiedadesimp.Controls.Add(this.RBlinea);
             this.GBpropiedadesimp.Controls.Add(this.RBtodo);
-            this.GBpropiedadesimp.Location = new System.Drawing.Point(517, 124);
+            this.GBpropiedadesimp.Location = new System.Drawing.Point(513, 166);
             this.GBpropiedadesimp.Name = "GBpropiedadesimp";
             this.GBpropiedadesimp.Size = new System.Drawing.Size(202, 111);
             this.GBpropiedadesimp.TabIndex = 27;
@@ -541,12 +550,82 @@
             this.RBtodo.Text = "Todo el reporte";
             this.RBtodo.UseVisualStyleBackColor = true;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.label14);
+            this.panel1.Controls.Add(this.label13);
+            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Location = new System.Drawing.Point(519, 17);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(196, 143);
+            this.panel1.TabIndex = 28;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::StickerPrinter.Properties.Resources.barcode;
+            this.pictureBox2.Location = new System.Drawing.Point(11, 25);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(175, 34);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(12, 62);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(57, 15);
+            this.label11.TabIndex = 1;
+            this.label11.Text = "CAMPO 1";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(8, 7);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(44, 15);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "TÍTULO";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(12, 85);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(57, 15);
+            this.label12.TabIndex = 3;
+            this.label12.Text = "CAMPO 2";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(12, 105);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(53, 15);
+            this.label13.TabIndex = 4;
+            this.label13.Text = "Campo 3";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(12, 126);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(53, 15);
+            this.label14.TabIndex = 5;
+            this.label14.Text = "Campo 4";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(729, 331);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.GBpropiedadesimp);
             this.Controls.Add(this.BTNimprimir);
             this.Controls.Add(this.BTNmostrar);
@@ -572,6 +651,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.NUDrangoF)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUDrangoI)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUDlinea)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -621,6 +703,13 @@
         private System.Windows.Forms.RadioButton RBrango;
         private System.Windows.Forms.RadioButton RBlinea;
         private System.Windows.Forms.RadioButton RBtodo;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
 
     }
 }

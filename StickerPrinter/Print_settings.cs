@@ -32,8 +32,6 @@ namespace StickerPrinter
             printer = new ApplicationPrinter();
             sticker = new LabelBuilder();
 
-            XElement main = XElement.Load(@confPath);
-
             table = t;
 
             tituloI = titu;
@@ -88,7 +86,7 @@ namespace StickerPrinter
                     }
                     if (!(boolTitulo) && !(boolCampo1) && !(boolCampo2) && !(boolCampo3) && !(boolCampo4))
                     {
-                        sticker.PrintDelivery(CMBimpresora.SelectedItem.ToString(), linea1[codigobarrasI], linea1[detalles1I], linea1[tituloI], 1, 2, linea1[detalles3I], linea1[detalles4I]);
+                        sticker.PrintDelivery(CMBimpresora.SelectedItem.ToString(), linea1[codigobarrasI], linea1[detalles2I], linea1[tituloI], 1, 2, linea1[detalles3I], linea1[detalles4I], linea1[detalles1I]);
                     }
                     else
                     {
@@ -109,7 +107,7 @@ namespace StickerPrinter
                         if (boolCampo4) campo4 = TXTcampo4;
                         else campo4 = linea1[detalles4I];
 
-                        sticker.PrintDelivery(CMBimpresora.SelectedItem.ToString(), linea1[codigobarrasI], campo1, titulo, 1, 2, campo3, campo4);
+                        sticker.PrintDelivery(CMBimpresora.SelectedItem.ToString(), linea1[codigobarrasI], campo2, titulo, 1, 2, campo3, campo4, campo1);
                     }
                 }
 
@@ -153,7 +151,7 @@ namespace StickerPrinter
                             {
                                 if (!(boolTitulo) && !(boolCampo1) && !(boolCampo2) && !(boolCampo3) && !(boolCampo4))
                                 {
-                                    sticker.PrintDelivery2(CMBimpresora.SelectedItem.ToString(), 1, 2, linea1[codigobarrasI], linea1[detalles2I], linea1[tituloI], linea1[detalles3I], linea1[detalles4I], linea2[tituloI], linea2[codigobarrasI], linea2[detalles2I], linea2[detalles3I], linea2[detalles4I]);
+                                    sticker.PrintDelivery2(CMBimpresora.SelectedItem.ToString(), 1, 2, linea1[codigobarrasI], linea1[detalles2I], linea1[tituloI], linea1[detalles3I], linea1[detalles4I], linea2[tituloI], linea2[codigobarrasI], linea2[detalles2I], linea2[detalles3I], linea2[detalles4I], linea1[detalles1I], linea2[detalles1I]);
                                 }
                                 else
                                 {
@@ -194,7 +192,7 @@ namespace StickerPrinter
                                         campo24 = linea2[detalles4I];
                                     }
 
-                                    sticker.PrintDelivery2(CMBimpresora.SelectedItem.ToString(), 1, 2, linea1[codigobarrasI], campo2, titulo, campo3, campo4, titulo2, linea2[codigobarrasI], campo22, campo23, campo24);
+                                    sticker.PrintDelivery2(CMBimpresora.SelectedItem.ToString(), 1, 2, linea1[codigobarrasI], campo2, titulo, campo3, campo4, titulo2, linea2[codigobarrasI], campo22, campo23, campo24, campo1, campo21);
                                 }
                             }
                         }
@@ -204,7 +202,7 @@ namespace StickerPrinter
                             {
                                 if (!(boolTitulo) && !(boolCampo1) && !(boolCampo2) && !(boolCampo3) && !(boolCampo4))
                                 {
-                                    sticker.PrintDelivery(CMBimpresora.SelectedItem.ToString(), linea1[codigobarrasI], linea1[detalles1I], linea1[tituloI], 1, 2, linea1[detalles3I], linea1[detalles4I]);
+                                    sticker.PrintDelivery(CMBimpresora.SelectedItem.ToString(), linea1[codigobarrasI], linea1[detalles2I], linea1[tituloI], 1, 2, linea1[detalles3I], linea1[detalles4I], linea1[detalles1I]);
                                 }
                                 else
                                 {
@@ -225,7 +223,7 @@ namespace StickerPrinter
                                     if (boolCampo4) campo4 = TXTcampo4;
                                     else campo4 = linea1[detalles4I];
 
-                                    sticker.PrintDelivery(CMBimpresora.SelectedItem.ToString(), linea1[codigobarrasI], campo1, titulo, 1, 2, campo3, campo4);
+                                    sticker.PrintDelivery(CMBimpresora.SelectedItem.ToString(), linea1[codigobarrasI], campo2, titulo, 1, 2, campo3, campo4, campo1);
                                 }
                             }
                             else
@@ -234,7 +232,7 @@ namespace StickerPrinter
                                 {
                                     if (!(boolTitulo) && !(boolCampo1) && !(boolCampo2) && !(boolCampo3) && !(boolCampo4))
                                     {
-                                        sticker.PrintDelivery2(CMBimpresora.SelectedItem.ToString(), 1, 2, linea1[codigobarrasI], linea1[detalles2I], linea1[tituloI], linea1[detalles3I], linea1[detalles4I], linea2[tituloI], linea2[codigobarrasI], linea2[detalles2I], linea2[detalles3I], linea2[detalles4I]);
+                                        sticker.PrintDelivery2(CMBimpresora.SelectedItem.ToString(), 1, 2, linea1[codigobarrasI], linea1[detalles2I], linea1[tituloI], linea1[detalles3I], linea1[detalles4I], linea2[tituloI], linea2[codigobarrasI], linea2[detalles2I], linea2[detalles3I], linea2[detalles4I], linea1[detalles1I], linea2[detalles2I]);
                                     }
                                     else
                                     {
@@ -254,28 +252,28 @@ namespace StickerPrinter
                                             campo21 = linea2[detalles1I];
                                         }
 
-                                        if (boolTitulo) campo2 = campo22 = TXTcampo2;
+                                        if (boolCampo2) campo2 = campo22 = TXTcampo2;
                                         else
                                         {
                                             campo2 = linea1[detalles2I];
                                             campo22 = linea2[detalles2I];
                                         }
 
-                                        if (boolTitulo) campo3 = campo23 = TXTcampo3;
+                                        if (boolCampo3) campo3 = campo23 = TXTcampo3;
                                         else
                                         {
                                             campo3 = linea1[detalles3I];
                                             campo23 = linea2[detalles3I];
                                         }
 
-                                        if (boolTitulo) campo4 = campo24 = TXTcampo4;
+                                        if (boolCampo4) campo4 = campo24 = TXTcampo4;
                                         else
                                         {
                                             campo4 = linea1[detalles4I];
                                             campo24 = linea2[detalles4I];
                                         }
 
-                                        sticker.PrintDelivery2(CMBimpresora.SelectedItem.ToString(), 1, 2, linea1[codigobarrasI], campo2, titulo, campo3, campo4, titulo2, linea2[codigobarrasI], campo22, campo23, campo24);
+                                        sticker.PrintDelivery2(CMBimpresora.SelectedItem.ToString(), 1, 2, linea1[codigobarrasI], campo2, titulo, campo3, campo4, titulo2, linea2[codigobarrasI], campo22, campo23, campo24, campo1, campo21);
                                     }
                                 }
                             }
@@ -317,7 +315,7 @@ namespace StickerPrinter
                             {
                                 if (!(boolTitulo) && !(boolCampo1) && !(boolCampo2) && !(boolCampo3) && !(boolCampo4))
                                 {
-                                    sticker.PrintDelivery(CMBimpresora.SelectedItem.ToString(), linea1[codigobarrasI], linea1[detalles1I], linea1[tituloI], 1, 2, linea1[detalles3I], linea1[detalles4I]);
+                                    sticker.PrintDelivery(CMBimpresora.SelectedItem.ToString(), linea1[codigobarrasI], linea1[detalles2I], linea1[tituloI], 1, 2, linea1[detalles3I], linea1[detalles4I], linea1[detalles1I]);
                                 }
                                 else
                                 {
@@ -338,7 +336,7 @@ namespace StickerPrinter
                                     if (boolCampo4) campo4 = TXTcampo4;
                                     else campo4 = linea1[detalles4I];
 
-                                    sticker.PrintDelivery(CMBimpresora.SelectedItem.ToString(), linea1[codigobarrasI], campo1, titulo, 1, 2, campo3, campo4);
+                                    sticker.PrintDelivery(CMBimpresora.SelectedItem.ToString(), linea1[codigobarrasI], campo2, titulo, 1, 2, campo3, campo4, campo1);
                                 }
                             }
                             else
@@ -347,7 +345,7 @@ namespace StickerPrinter
                                 {
                                     if (!(boolTitulo) && !(boolCampo1) && !(boolCampo2) && !(boolCampo3) && !(boolCampo4))
                                     {
-                                        sticker.PrintDelivery2(CMBimpresora.SelectedItem.ToString(), 1, 2, linea1[codigobarrasI], linea1[detalles2I], linea1[tituloI], linea1[detalles3I], linea1[detalles4I], linea2[tituloI], linea2[codigobarrasI], linea2[detalles2I], linea2[detalles3I], linea2[detalles4I]);
+                                        sticker.PrintDelivery2(CMBimpresora.SelectedItem.ToString(), 1, 2, linea1[codigobarrasI], linea1[detalles2I], linea1[tituloI], linea1[detalles3I], linea1[detalles4I], linea2[tituloI], linea2[codigobarrasI], linea2[detalles2I], linea2[detalles3I], linea2[detalles4I], linea1[detalles1I], linea2[detalles1I]);
                                     }
                                     else
                                     {
@@ -388,7 +386,7 @@ namespace StickerPrinter
                                             campo24 = linea2[detalles4I];
                                         }
 
-                                        sticker.PrintDelivery2(CMBimpresora.SelectedItem.ToString(), 1, 2, linea1[codigobarrasI], campo2, titulo, campo3, campo4, titulo2, linea2[codigobarrasI], campo22, campo23, campo24);
+                                        sticker.PrintDelivery2(CMBimpresora.SelectedItem.ToString(), 1, 2, linea1[codigobarrasI], campo2, titulo, campo3, campo4, titulo2, linea2[codigobarrasI], campo22, campo23, campo24, campo1, campo21);
                                     }
                                 }
                             }
@@ -399,7 +397,7 @@ namespace StickerPrinter
                             {
                                 if (!(boolTitulo) && !(boolCampo1) && !(boolCampo2) && !(boolCampo3) && !(boolCampo4))
                                 {
-                                    sticker.PrintDelivery2(CMBimpresora.SelectedItem.ToString(), 1, 2, linea1[codigobarrasI], linea1[detalles2I], linea1[tituloI], linea1[detalles3I], linea1[detalles4I], linea2[tituloI], linea2[codigobarrasI], linea2[detalles2I], linea2[detalles3I], linea2[detalles4I]);
+                                    sticker.PrintDelivery2(CMBimpresora.SelectedItem.ToString(), 1, 2, linea1[codigobarrasI], linea1[detalles2I], linea1[tituloI], linea1[detalles3I], linea1[detalles4I], linea2[tituloI], linea2[codigobarrasI], linea2[detalles2I], linea2[detalles3I], linea2[detalles4I], linea1[detalles1I], linea2[detalles2I]);
                                 }
                                 else
                                 {
@@ -440,7 +438,7 @@ namespace StickerPrinter
                                         campo24 = linea2[detalles4I];
                                     }
 
-                                    sticker.PrintDelivery2(CMBimpresora.SelectedItem.ToString(), 1, 2, linea1[codigobarrasI], campo2, titulo, campo3, campo4, titulo2, linea2[codigobarrasI], campo22, campo23, campo24);
+                                    sticker.PrintDelivery2(CMBimpresora.SelectedItem.ToString(), 1, 2, linea1[codigobarrasI], campo2, titulo, campo3, campo4, titulo2, linea2[codigobarrasI], campo22, campo23, campo24, campo1, campo21);
                                 }
                             }
                         }
@@ -473,6 +471,20 @@ namespace StickerPrinter
             else
             {
                 MessageBox.Show("Asegúrese de especificar los campos requeridos");
+            }
+        }
+
+        private void Print_settings_Load(object sender, EventArgs e)
+        {
+            if (confPath.Equals(null))
+            {
+                MessageBox.Show("No se encontró un archivo de configuración", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                XElement root = XElement.Load(@confPath);
+                int index = (int)root.Element("printerIndex");
+                CMBimpresora.SelectedIndex = index;
             }
         }
 

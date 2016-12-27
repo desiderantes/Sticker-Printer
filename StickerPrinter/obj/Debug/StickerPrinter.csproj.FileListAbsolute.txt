@@ -17,3 +17,7 @@ C:\Users\DTHPSE15\Documents\Visual Studio 2013\Projects\StickerPrinter\StickerPr
 C:\Users\DTHPSE15\Documents\Visual Studio 2013\Projects\StickerPrinter\StickerPrinter\bin\Debug\Microsoft.VisualBasic.dll
 C:\Users\DTHPSE15\Documents\Visual Studio 2013\Projects\StickerPrinter\StickerPrinter\obj\Debug\StickerPrinter.Visualizer.resources
 C:\Users\DTHPSE15\Documents\Visual Studio 2013\Projects\StickerPrinter\StickerPrinter\obj\Debug\StickerPrinter.Print_settings.resources
+C:\Users\DTHPSE15\Documents\Visual Studio 2013\Projects\StickerPrinter\StickerPrinter\bin\Debug\StickerPrinter.exe.manifest
+C:\Users\DTHPSE15\Documents\Visual Studio 2013\Projects\StickerPrinter\StickerPrinter\bin\Debug\StickerPrinter.application
+C:\Users\DTHPSE15\Documents\Visual Studio 2013\Projects\StickerPrinter\StickerPrinter\obj\Debug\StickerPrinter.exe.manifest
+C:\Users\DTHPSE15\Documents\Visual Studio 2013\Projects\StickerPrinter\StickerPrinter\obj\Debug\StickerPrinter.application

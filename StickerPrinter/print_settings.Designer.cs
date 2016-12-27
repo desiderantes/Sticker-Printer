@@ -84,6 +84,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Print_settings";
             this.Text = "print_settings";
+            this.Load += new System.EventHandler(this.Print_settings_Load);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 

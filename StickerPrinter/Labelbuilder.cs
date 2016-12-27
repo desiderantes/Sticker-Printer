@@ -187,7 +187,7 @@ namespace StickerPrinter
             RawPrinterHelper.SendStringToPrinter(printerName, sb.ToString());
         }
 
-        public void PrintDelivery2(string printerName, int conjuntos, int etiquetas, string radicado, string fecha, string titulo, string leyenda1, string leyenda2, string titulo2, string radicado2, string fecha2, string leyenda12, string leyenda22)
+        public void PrintDelivery2(string printerName, int conjuntos, int etiquetas, string radicado, string fecha, string titulo, string leyenda1, string leyenda2, string titulo2, string radicado2, string fecha2, string leyenda12, string leyenda22, string detalles1, string detalles12)
         {
             StringBuilder sb;
 
@@ -201,14 +201,14 @@ namespace StickerPrinter
             sb.AppendLine("N");
             sb.AppendLine("A40,0,0,2,1,2,N,\"" + titulo + "\"");
             sb.AppendLine("B40,40,0,1A,2,2,50,N,\"" + radicado + "\"");
-            sb.AppendLine("A40,98,0,2,1,1,N,\"" + radicado + "\"");
+            sb.AppendLine("A40,98,0,2,1,1,N,\"" + detalles1 + "\"");
             sb.AppendLine("A40,120,0,2,1,1,N,\"" + fecha + "\"");
             sb.AppendLine("A40,140,0,1,1,1,N,\"" + leyenda1 + "\"");
             sb.AppendLine("A40,160,0,1,1,1,N,\"" + leyenda2 + "\"");
 
             sb.AppendLine("A450,0,0,2,1,2,N,\"" + titulo2 + "\"");
             sb.AppendLine("B450,40,0,1A,2,2,50,N,\"" + radicado2 + "\"");
-            sb.AppendLine("A450,98,0,2,1,1,N,\"" + radicado2 + "\"");
+            sb.AppendLine("A450,98,0,2,1,1,N,\"" + detalles12 + "\"");
             sb.AppendLine("A450,120,0,2,1,1,N,\"" + fecha2 + "\"");
             sb.AppendLine("A450,140,0,1,1,1,N,\"" + leyenda12 + "\"");
             sb.AppendLine("A450,160,0,1,1,1,N,\"" + leyenda22 + "\"");
@@ -217,7 +217,7 @@ namespace StickerPrinter
             RawPrinterHelper.SendStringToPrinter(printerName, sb.ToString());
         }
 
-        public void PrintDelivery(string printerName, string radicado, string fecha, string titulo, int conjuntos, int etiquetas, string leyenda1, string leyenda2)
+        public void PrintDelivery(string printerName, string radicado, string fecha, string titulo, int conjuntos, int etiquetas, string leyenda1, string leyenda2, string detalles1)
         {
             StringBuilder sb;
 
@@ -231,7 +231,7 @@ namespace StickerPrinter
             sb.AppendLine("N");
             sb.AppendLine("A50,0,0,2,1,2,N,\"" + titulo + "\"");
             sb.AppendLine("B40,40,0,1A,2,2,50,N,\"" + radicado + "\"");
-            sb.AppendLine("A40,98,0,2,1,1,N,\"" + radicado + "\"");
+            sb.AppendLine("A40,98,0,2,1,1,N,\"" + detalles1 + "\"");
             sb.AppendLine("A40,120,0,2,1,1,N,\"" + fecha + "\"");
             sb.AppendLine("A40,140,0,1,1,1,N,\"" + leyenda1 + "\"");
             sb.AppendLine("A40,160,0,1,1,1,N,\"" + leyenda2 + "\"");
